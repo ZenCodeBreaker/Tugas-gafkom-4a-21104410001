@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Praktek 6 - No fill Transparant</title>
+  </head>
+  <body>
+    <!-- CDN P5JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- CODE -->
+    <script>
+      function setup() {
+        createCanvas(200, 200);
+      }
+
+      function draw() {
+        background(220);
+        fill(255, 255, 0, 50);
+        // Garis Hijau
+        stroke(0, 255, 0);
+        circle(100, 100, 50);
+        // Garis Merah
+        stroke(255, 0, 0);
+        rect(0, 0, 100, 50);
+        noFill();
+
+        // Garis Biru
+        stroke(0, 0, 255);
+        ellipse(50, 70, 30, 30);
+      }
+
+      function setup() {
+        createCanvas(200, 200);
+      }
+      function draw() {
+        background(220);
+        fill(255, 255, 0, 50);
+        // Garis Hijau
+        stroke(0, 255, 0);
+        circle(100, 100, 50);
+        // Garis Merah
+        stroke(255, 0, 0);
+        rect(0, 0, 100, 50);
+        noFill();
+
+        // Garis Biru
+        stroke(0, 0, 255);
+        ellipse(50, 70, 30, 30);
+
+        // Tanpa Garis
+        noStroke();
+        fill(255, 255, 0);
+        circle(20, 180, 50);
+      }
+    </script>
+  </body>
+</html>
